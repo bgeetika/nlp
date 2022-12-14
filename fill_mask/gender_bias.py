@@ -5,7 +5,13 @@ CATCH_WORD_TO_PRONOUNS = {
     'him/her': ['him', 'her'],
     'his/her': ['his', 'her'],
     'they': ['he', 'she'],
-    'them': ['him', 'her']
+    'he': ['he', 'she'],
+    'she': ['he', 'she'],
+    'them': ['him', 'her'],
+    'him': ['him', 'her'],
+    'his': ['him', 'her'],
+    'her': ['him', 'her']
+
 }
 
 
