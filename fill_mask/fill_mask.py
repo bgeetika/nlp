@@ -40,7 +40,8 @@ urls = [
     'https://en.wikipedia.org/wiki/Businessperson']
 unmasker = pipeline('fill-mask', model='distilbert-base-uncased')
 score_statistics = get_statistics_for_urls(urls, unmasker)
-print('count={0}, mean={1}, median={2}'.format(
-    len(score_statistics['score_ratios']),
-    np.mean(score_statistics['score_ratios']),
-    np.median(score_statistics['score_ratios'])))
+print(
+    'count={0}, mean={1}, median={2}'.format(
+        len(score_statistics['score_ratios']),
+        np.mean(score_statistics['score_ratios']),
+        np.median(score_statistics['score_ratios'])))
