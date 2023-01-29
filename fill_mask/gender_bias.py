@@ -16,11 +16,11 @@ CATCH_WORD_TO_PRONOUNS = {
 
 
 def get_masked_str_and_targets(text):
-    text_words = text.split(' ')
+    text_words = text.split(' ')  # splits the string into a list
     masked_str_and_targets = []
     for i in range(len(text_words)):
         pronouns = CATCH_WORD_TO_PRONOUNS.get(text_words[i], None)
         if pronouns:
-            masked_str = ' '.join(
+            masked_str = ' '.join(  # joins all the elemnts into one string
                 text_words[:i] + ['[MASK]'] + text_words[i + 1:])
             yield (masked_str, pronouns)
