@@ -36,10 +36,3 @@ def get_text_chunks_from_url(url, chunk_size=200):
     return chunks
 
 
-"""
-text = get_text_from_url('https://en.m.wikipedia.org/wiki/Engineer')
-chunks = create_text_chunks(text)
-for chunk in chunks:
-    print(chunk)
-    print('\n\n')
-"""
